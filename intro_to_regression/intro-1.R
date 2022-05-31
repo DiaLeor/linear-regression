@@ -48,3 +48,31 @@
 
 # Note: The video states that if you hit AFTER someone who hits many home runs, you will score many runs, while the textbook states
 # that if you hit BEFORE someone who hits many home runs, you will score many runs. The textbook wording is accurate.
+
+# Bases on Balls or Stolen Bases? ----------------------------------------
+
+# The visualization of choice when exploring the relationship between two variables like home runs and runs is a scatter plot.
+
+# ...Code...
+library(Lahman)
+library(tidyverse)
+library(dslabs)
+ds_theme_set()
+
+# Scatter plot of the relationship between HRs and wins
+Teams %>% filter(yearID %in% 1961:2001) %>%
+  mutate(HR_per_game = HR / G, R_per_game = R / G) %>%
+  ggplot(aes(HR_per_game, R_per_game)) + 
+  geom_point(alpha = 0.5)
+
+# Scatter plot of the relationship between SBs and wins
+Teams %>% filter(yearID %in% 1961:2001) %>%
+mutate(SB_per_game = SB / G, R_per_game = R / G) %>%
+  ggplot(aes(SB_per_game, R_per_game)) + 
+  geom_point(alpha = 0.5)
+
+# Scatter plot of the relationship between BBs and wins
+Teams %>% filter(yearID %in% 1961:2001) %>%
+  mutate(BB_per_game = BB / G, R_per_game = R / G) %>%
+  ggplot(aes(BB_per_game, R_per_game)) + 
+  geom_point(alpha = 0.5)
