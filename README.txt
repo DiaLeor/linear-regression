@@ -13,6 +13,15 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 -- intro-1.R
     - Motivating Example: Moneyball - a brief history of statistics in baseball
     
-    - Baseball Basics -
+    - Baseball Basics - the basics of baseball
     
-    - 
+    - Bases on Balls or Stolen Bases? -
+
+-- HRs-wins.png
+- Scatter plot of the relationship between home runs and wins
+
+-- SBs-wins.png
+- Scatter plot of the relationship between stolen bases and wins
+
+-- BBs-wins.png
+- Scatter plot of the relationship between bases on balls and wins
