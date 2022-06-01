@@ -11,11 +11,22 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 --- Directory: intro_to_regression ---
 
 -- intro-1.R
+- staging baseball as a motivating example to introduce linear regression
+
     - Motivating Example: Moneyball - a brief history of statistics in baseball
     
     - Baseball Basics - the basics of baseball
     
-    - Bases on Balls or Stolen Bases? -
+    - Bases on Balls or Stolen Bases? - comparing several plots on team data
+    
+-- intro-2.R
+- 
+    - Correlation -
+    
+    - Correlation Coefficient -
+    
+    - Sample Correlation is a Random Variable -
+    
 
 -- HRs-wins.png
 - Scatter plot of the relationship between home runs and wins
@@ -25,3 +36,8 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 
 -- BBs-wins.png
 - Scatter plot of the relationship between bases on balls and wins
+
+.
+..
+.
+--- Directory: linear_models ---
