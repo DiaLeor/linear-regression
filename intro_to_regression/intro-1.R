@@ -59,20 +59,34 @@ library(tidyverse)
 library(dslabs)
 ds_theme_set()
 
+str(Teams)
+?Teams
+
 # Scatter plot of the relationship between HRs and wins
 Teams %>% filter(yearID %in% 1961:2001) %>%
   mutate(HR_per_game = HR / G, R_per_game = R / G) %>%
   ggplot(aes(HR_per_game, R_per_game)) + 
   geom_point(alpha = 0.5)
+# The plot shows a very strong association: teams with more home runs tended to score more runs.
 
 # Scatter plot of the relationship between SBs and wins
 Teams %>% filter(yearID %in% 1961:2001) %>%
 mutate(SB_per_game = SB / G, R_per_game = R / G) %>%
   ggplot(aes(SB_per_game, R_per_game)) + 
   geom_point(alpha = 0.5)
+# Here, the relationship is not as clear.
+
 
 # Scatter plot of the relationship between BBs and wins
 Teams %>% filter(yearID %in% 1961:2001) %>%
   mutate(BB_per_game = BB / G, R_per_game = R / G) %>%
   ggplot(aes(BB_per_game, R_per_game)) + 
   geom_point(alpha = 0.5)
+# Although the relationship is not as strong as it was for home runs, we do see a pretty strong relationship here.
+
+# We know that, by definition, home runs cause runs, because when you hit a home run, at least one run will score. Now it could be that
+# home runs also cause the bases on balls. If you understand the game, you will agree that that could be the case. So it might appear
+# that a base on ball is causing runs, when in fact, it's home runs that's causing both. This is called confounding.
+
+# Linear regression will help us parse all this out and quantify the associations.
+# This will then help us determine what players to recruit.
