@@ -37,16 +37,16 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     -
     
 -- HRs-wins.png
-- Scatter plot of the relationship between home runs and wins
+- scatter plot of the relationship between home runs and wins
 
 -- SBs-wins.png
-- Scatter plot of the relationship between stolen bases and wins
+- scatter plot of the relationship between stolen bases and wins
 
 -- BBs-wins.png
-- Scatter plot of the relationship between bases on balls and wins
+- scatter plot of the relationship between bases on balls and wins
 
 -- fathers-sons-heights.png
-- Scatter plot of the relationship between fathers' and sons' heights
+- scatter plot of the relationship between fathers' and sons' heights
 
 .
 ..
