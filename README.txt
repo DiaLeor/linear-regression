@@ -45,6 +45,9 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 -- BBs-wins.png
 - Scatter plot of the relationship between bases on balls and wins
 
+-- fathers-sons-heights.png
+- Scatter plot of the relationship between fathers' and sons' heights
+
 .
 ..
 .
