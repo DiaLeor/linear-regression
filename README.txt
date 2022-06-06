@@ -24,9 +24,9 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 
     - Correlation - Galton's data on the heights of fathers and sons in his family
     
-    - Correlation Coefficient - 
+    - Correlation Coefficient - understanding how two variables move together
     
-    - Sample Correlation is a Random Variable -
+    - Sample Correlation is a Random Variable - interpreting correlations as estimates containing uncertainty
     
 -- intro-3.R
 - 
@@ -47,6 +47,12 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 
 -- fathers-sons-heights.png
 - scatter plot of the relationship between fathers' and sons' heights
+
+-- sample-correlation-distribution.png
+- histogram of the distrubution of the sample correlation
+
+-- sample-correlation-QQplot.png
+- QQplot to evaluate whether N is large enough in the sample
 
 .
 ..
