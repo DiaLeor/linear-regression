@@ -80,6 +80,7 @@ R <- sample_n(galton_heights, 25, replace = TRUE) %>%
 R # R is a random variable
 
 # Monte Carlo simulation to show distribution of sample correlation
+set.seed(0)
 B <- 1000
 N <- 25
 R <- replicate(B, {
