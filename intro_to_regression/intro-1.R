@@ -1,6 +1,5 @@
 ## Section 1.1 - Introduction to Regression: Baseball as a Motivating Example
 
-
 # Motivating Example: Moneyball -------------------------------------------
 
 # Statistics have been used in baseball since its beginnings. Note that the data set we will be using, included in the Lahman library,
