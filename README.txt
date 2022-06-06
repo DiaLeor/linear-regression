@@ -22,7 +22,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 -- intro-2.R
 - understanding correlation
 
-    - Correlation - Galton's data on the heights of fathers and sons
+    - Correlation - Galton's data on the heights of fathers and sons in his family
     
     - Correlation Coefficient - 
     
