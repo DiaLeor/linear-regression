@@ -1,3 +1,4 @@
+## Section 1.2 - Introduction to Regression: Correlation
 
 # Correlation -------------------------------------------------------------
 
