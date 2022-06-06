@@ -20,14 +20,22 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     - Bases on Balls or Stolen Bases? - comparing several plots on team data
     
 -- intro-2.R
-- 
-    - Correlation -
+- understanding correlation
+
+    - Correlation - Galton's data on the heights of fathers and sons
     
-    - Correlation Coefficient -
+    - Correlation Coefficient - 
     
     - Sample Correlation is a Random Variable -
     
-
+-- intro-3.R
+- 
+    - 
+    
+    -
+    
+    -
+    
 -- HRs-wins.png
 - Scatter plot of the relationship between home runs and wins
 
