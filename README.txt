@@ -11,7 +11,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 --- Directory: intro_to_regression ---
 
 -- intro-1.R
-- staging baseball as a motivating example to introduce linear regression
+- Section 1.1 - Introduction to Regression: Baseball as a Motivating Example
 
     - Motivating Example: Moneyball - a brief history of statistics in baseball
     
@@ -20,7 +20,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     - Bases on Balls or Stolen Bases? - comparing several plots on team data
     
 -- intro-2.R
-- understanding correlation
+- Section 1.2 - Introduction to Regression: Correlation
 
     - Correlation - Galton's data on the heights of fathers and sons in his family
     
@@ -29,12 +29,15 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     - Sample Correlation is a Random Variable - interpreting correlations as estimates containing uncertainty
     
 -- intro-3.R
-- 
-    - 
+- Section 1.3 - Introduction to Regression: Stratification and Variance Explained
     
-    -
+    - Anscombe's Quartet/Stratification - 
     
-    -
+    - Bivariate Normal Distribution -
+    
+    - Variance Explained -
+    
+    - There are Two Regression Lines -
     
 -- HRs-wins.png
 - scatter plot of the relationship between home runs and wins
