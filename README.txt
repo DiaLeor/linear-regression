@@ -31,7 +31,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 -- intro-3.R
 - Section 1.3 - Introduction to Regression: Stratification and Variance Explained
     
-    - Anscombe's Quartet/Stratification - 
+    - Anscombe's Quartet/Stratification - introducing the regression line
     
     - Bivariate Normal Distribution -
     
