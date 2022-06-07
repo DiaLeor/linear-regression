@@ -39,7 +39,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     
     - There are Two Regression Lines -
     
---- Directory: intro_to_regression/plots
+--- Directory: intro_to_regression/plots ---
 - listed in order of appearance
     
 -- HRs-wins.png
