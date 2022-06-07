@@ -39,29 +39,29 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     
     - There are Two Regression Lines -
     
-    --- Directory: plots
-    - listed in order of appearance
+--- Directory: intro_to_regression/plots
+- listed in order of appearance
     
-    -- HRs-wins.png
-    - scatter plot of the relationship between home runs and wins
+-- HRs-wins.png
+- scatter plot of the relationship between home runs and wins
 
-    -- SBs-wins.png
-    - scatter plot of the relationship between stolen bases and wins
+-- SBs-wins.png
+- scatter plot of the relationship between stolen bases and wins
 
-    -- BBs-wins.png
-    - scatter plot of the relationship between bases on balls and wins
+-- BBs-wins.png
+- scatter plot of the relationship between bases on balls and wins
 
-    -- fathers-sons-heights.png
-    - scatter plot of the relationship between fathers' and sons' heights
+-- fathers-sons-heights.png
+- scatter plot of the relationship between fathers' and sons' heights
 
-    -- sample-correlation-distribution.png
-    - histogram of the distrubution of the sample correlation
+-- sample-correlation-distribution.png
+- histogram of the distrubution of the sample correlation
 
-    -- sample-correlation-QQplot.png
-    - QQplot to evaluate whether N is large enough in the sample
+-- sample-correlation-QQplot.png
+- QQplot to evaluate whether N is large enough in the sample
 
-    -- fathers-sons-regression-line.png
-    - plot regression line on fathers' and sons' heights
+-- fathers-sons-regression-line.png
+- plot regression line on fathers' and sons' heights
 .
 ..
 .
