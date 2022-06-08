@@ -163,9 +163,6 @@ galton_heights %>%
 # There are two different regression lines depending on whether we are taking the expectation of Y given X or
 # taking the expectation of X given Y.
 
-# x = {E(Y | X = x) - b}/0.5
-# y = E(X | Y = y) = 34 + 0.5*y
-
 # ..Code..
 # compute a regression line to predict the son's height from the father's height
 mu_x <- mean(galton_heights$father)
