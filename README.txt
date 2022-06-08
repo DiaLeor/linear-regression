@@ -33,7 +33,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     
     - Anscombe's Quartet/Stratification - introducing the regression line
     
-    - Bivariate Normal Distribution -
+    - Bivariate Normal Distribution - understanding the bivariate normal distribution
     
     - Variance Explained -
     
@@ -42,26 +42,29 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 --- Directory: intro_to_regression/plots ---
 - listed in order of appearance
     
--- HRs-wins.png
+-- HRs_wins.png
 - scatter plot of the relationship between home runs and wins
 
--- SBs-wins.png
+-- SBs_wins.png
 - scatter plot of the relationship between stolen bases and wins
 
--- BBs-wins.png
+-- BBs_wins.png
 - scatter plot of the relationship between bases on balls and wins
 
--- fathers-sons-heights.png
+-- fathers_sons_heights.png
 - scatter plot of the relationship between fathers' and sons' heights
 
--- sample-correlation-distribution.png
+-- sample_correlation_distribution.png
 - histogram of the distrubution of the sample correlation
 
--- sample-correlation-QQplot.png
+-- sample_correlation_QQplot.png
 - QQplot to evaluate whether N is large enough in the sample
 
--- fathers-sons-regression-line.png
+-- fathers_sons_regression_line.png
 - plot regression line on fathers' and sons' heights
+
+-- stratified_heights.png
+- plots stratifying son height by standardized father heights
 .
 ..
 .
