@@ -119,8 +119,8 @@ galton_heights %>%
 
 # When two variables follow a bivariate normal distribution, then for any given x (the expected value of the y
 # in pairs for which x is set at that value) is:
-# E(Y | X = x) = mu_Y + rho*((X-mu_x)/(sigma_x))*sigma_y
-# Note: this is a line with slope m = rho*((sigma_Y)/(sigma_x)) and intercept b = mu_y - m*mu_x
+# E(Y | X = x) = mu_Y + rho*((X-mu_X)/(sigma_X))*sigma_Y
+# Note: this is a line with slope m = rho*((sigma_y)/(sigma_x)) and intercept b = mu_y - m*mu_x
 # Therefore, this is these slope and intercept are the same as the regression line.
 
 # i.e. Wwen two variables follow a bivariate normal distribution, computing the regression line is equivalent to
@@ -144,6 +144,19 @@ galton_heights %>%
 
 # Variance Explained ------------------------------------------------------
 
+# Conditioning on a random variable X can help to reduce variance of response variable Y.
+
+# The standard deviation of the conditional distribution is SD(Y | X = x) = sigma_y*sqrt(1-rho^2), which is
+# smaller than the standard deviation without conditioning sigma_y.
+
+# Because variance is the standard deviation squared, the variance of the conditional distribution is
+# sigma_y^2*(1 - rho^2).
+
+# In the statement "X explains such and such percent of the variability," the percent value refers to the variance.
+# The variance decreases by rho^2*100 percent.
+
+# The “variance explained” statement only makes sense when the data is approximated by a bivariate normal
+# distribution.
 
 # There are Two Regression Lines ------------------------------------------
 
