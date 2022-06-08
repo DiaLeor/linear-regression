@@ -36,6 +36,14 @@
 library(tidyverse)
 library(HistData)
 data("GaltonFamilies")
+set.seed(1983)
+galton_heights <- GaltonFamilies %>%
+  filter(gender == "male") %>%
+  group_by(family) %>%
+  sample_n(1) %>%
+  ungroup() %>%
+  select(father, childHeight) %>%
+  rename(son = childHeight)
 
 # number of fathers with height 72 or 72.5 inches
 sum(galton_heights$father == 72)
@@ -96,6 +104,43 @@ galton_heights %>%
 
 # Bivariate Normal Distribution -------------------------------------------
 
+# When a pair of random variables are approximated by the bivariate normal distribution, scatterplots look like
+# ovals. They can be thin (high correlation) or circle-shaped (no correlation).
+
+# If X and Y are normally distributed random variables and for any group of X, X = x; then Y is approximately normal
+# in that group, and the pair is approximately bivariate normal. When we fix x in this way, we then refer to the
+# resulting distribution of the y's in the group -- defined by setting x in this way -- as the conditional
+# distribution of y given x (conditional distribution of Y given X = x).
+
+# Notation of conditional distribution:
+# f(Y) | X = x
+# Notation of conditional expected value:
+# E(Y | X = x)
+
+# When two variables follow a bivariate normal distribution, then for any given x (the expected value of the y
+# in pairs for which x is set at that value) is:
+# E(Y | X = x) = mu_Y + rho*((X-mu_x)/(sigma_x))*sigma_y
+# Note: this is a line with slope m = rho*((sigma_Y)/(sigma_x)) and intercept b = mu_y - m*mu_x
+# Therefore, this is these slope and intercept are the same as the regression line.
+
+# i.e. Wwen two variables follow a bivariate normal distribution, computing the regression line is equivalent to
+# computing conditional expectations. Said another way, if the data are approximately bivariate, conditional
+# expectation is given by the regression line.
+
+# We can obtain a much more stable estimate of the conditional expectation by finding the regression line and
+# using it to make predictions.
+
+# ..Code..
+# If we think the height data is well-approximated by the bivariate normal distribution, then we should see
+# the normal approximation hold for each grouping.
+
+# Stratify the son height by the standardized father heights
+galton_heights %>%
+  mutate(z_father = round((father - mean(father)) / sd(father))) %>%
+  filter(z_father %in% -2:2) %>%
+  ggplot() +  
+  stat_qq(aes(sample = son)) +
+  facet_wrap( ~ z_father) # and we see that the assumption appears to hold.
 
 # Variance Explained ------------------------------------------------------
 
