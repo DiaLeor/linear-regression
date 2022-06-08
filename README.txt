@@ -35,7 +35,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     
     - Bivariate Normal Distribution - understanding the bivariate normal distribution
     
-    - Variance Explained -
+    - Variance Explained - the standard deviation squared
     
     - There are Two Regression Lines -
     
