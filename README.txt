@@ -37,7 +37,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     
     - Variance Explained - the standard deviation squared
     
-    - There are Two Regression Lines -
+    - There are Two Regression Lines - regression lines differ depending on expectations computed for a given y or given x
     
 --- Directory: intro_to_regression/plots ---
 - listed in order of appearance
