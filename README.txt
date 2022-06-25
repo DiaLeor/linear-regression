@@ -69,3 +69,24 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 ..
 .
 --- Directory: linear_models ---
+
+-- models-1.R
+- Section 2.1 - Linear Models: Introduction to Linear Models
+
+    - Confounding: Are BBs More Predictive? - bases on balls are confounded with home runs
+    
+    - Stratification and Multivariate Regression - using stratification to adjust for confounding
+    
+    - Linear Models - simple linear models
+    
+-- models-2.R
+- Section 2.2 -
+    
+--- Directory: intro_to_regression/plots ---
+- listed in order of appearance
+
+-- stratified_HR_for_RvBB.png
+- Scatter plots for runs versus bases on balls, stratified by home runs
+
+-- stratified_BB_for_RvHR.png
+- Scatter plots for runs versus home runs, stratified by bases on balls
