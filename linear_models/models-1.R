@@ -138,10 +138,27 @@ dat %>%
 # “Linear” here does not refer to lines, but rather to the fact that the conditional expectation is a linear
 # combination of known quantities.
 
-# In Galton's model, we assume Y (son's height) is a linear combination of a constant and X (father's height)
-# plus random noise. We further assume that ∈_i are independent from each other, have expected value 0 and the
-# standard deviation sigma which does not depend on i.
+# The simplest linear model is a constant: β_0
+# The next simplest linear model is a line: β_0 + β_1*x
 
-# Note that if we further assume that  is normally distributed, then the model is exactly the same one we derived earlier by assuming bivariate normal data.
+# For Galton's data, we would denote n observed fathers' heights with x_1,...,x_n. Then we model n son heights
+# we are trying to predict with the following model:
+# Y_i = β_0 + β_1*x_i + ∈_i, i = 1,...,N
 
-# We can subtract the mean from X to make β_0 more interpretable.
+# Here, x_i's are the fathers' heights, which are fixed (not random) due to the conditioning. And then Y_i is the
+# random son's height that we want to predict. We further assume that the errors ∈_i, which are denoted with the
+# Greek letter epsilon, are independent from each other, have expected value 0, and the standard deviation, sigma,
+# doesn't depend on i.
+
+# Note that if we further assume that  is normally distributed, then the model is exactly the same one we derived
+# earlier by assuming bivariate normal data.
+
+# NOTE: if your data is bivariate normal, the linear model above holds. If your data is not bivarite normal,
+# then you will need to have other ways of justifying the model.
+
+# Given how we wrote the model, the intercept β_0 is not very interpretable, as it is the predicted height of
+# a son with a father with no height. Due to regression to the mean, the prediction will usually be a bit larger
+# than 0. To make the intercept parameter more interpretable, we can reqrite the model slightly:
+# Y_i = β_0 + β_1*(x_i - x_bar) + ∈_i, i = 1,...,N
+# Here we have changed x_i to x_i - the average height (x_bar). In this case, β_0, the intercept, would be the
+# predicted height for the average father for the case where x_i = x_bar.
