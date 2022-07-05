@@ -11,7 +11,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 --- Directory: intro_to_regression ---
 
 -- intro-1.R
-- Section 1.1 - Introduction to Regression: Baseball as a Motivating Example
+- Section 1.1 - Baseball as a Motivating Example
 
     - Motivating Example: Moneyball - a brief history of statistics in baseball
     
@@ -20,7 +20,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     - Bases on Balls or Stolen Bases? - comparing several plots on team data
     
 -- intro-2.R
-- Section 1.2 - Introduction to Regression: Correlation
+- Section 1.2 - Correlation
 
     - Correlation - Galton's data on the heights of fathers and sons in his family
     
@@ -29,7 +29,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     - Sample Correlation is a Random Variable - interpreting correlations as estimates containing uncertainty
     
 -- intro-3.R
-- Section 1.3 - Introduction to Regression: Stratification and Variance Explained
+- Section 1.3 - Stratification and Variance Explained
     
     - Anscombe's Quartet/Stratification - introducing the regression line
     
@@ -71,7 +71,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 --- Directory: linear_models ---
 
 -- models-1.R
-- Section 2.1 - Linear Models: Introduction to Linear Models
+- Section 2.1 - Introduction to Linear Models
 
     - Confounding: Are BBs More Predictive? - bases on balls are confounded with home runs
     
@@ -80,9 +80,19 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     - Linear Models - simple linear models
     
 -- models-2.R
-- Section 2.2 -
+- Section 2.2 - Least Squares Estimates
+
+    - Least Squares Estimates (LSE)
+
+    - The lm Function
     
---- Directory: intro_to_regression/plots ---
+    - LSE are Random Variables
+    
+    - Advanced Note on LSE
+    
+    - Predicted Variables are Random Varialbes
+    
+--- Directory: linear_models/plots ---
 - listed in order of appearance
 
 -- stratified_HR_for_RvBB.png
