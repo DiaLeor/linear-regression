@@ -1,6 +1,5 @@
 ## Section 2.2 - Linear Models: Least Squares Estimates
 
-
 # Least Squares Estimates (LSE) -------------------------------------------
 
 # For regression, we aim to find the coefficient values that minimize the distance of the fitted model to the data.
