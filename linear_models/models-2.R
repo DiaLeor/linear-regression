@@ -2,15 +2,22 @@
 
 # Least Squares Estimates (LSE) -------------------------------------------
 
-# For regression, we aim to find the coefficient values that minimize the distance of the fitted model to the data.
+# For linear models to be useful, we have to estimate the unknown parameters, the βs (betas). In the standard
+# approach for regression, we aim to find the coefficient values that minimize the distance of the fitted model
+# to the data. To quantify this, we use the least squares equation.
 
-# Residual sum of squares (RSS) measures the distance between the true value and the predicted value given by the 
-# regression line. The values that minimize the RSS are called the least squares estimates (LSE).
+# For Galton's data, we would write something like this:
+# RSS = the sum from i = 1, ..., i = n{Y_i - β_0 + β_1*X_i)}^2
+
+# This quantity is called the Residual sum of squares (RSS), which measures the distance between the true value
+# and the predicted value given by the regression line. The values that minimize the RSS are called the least
+# squares estimates (LSE) and dentoe them (in this case) with β_0-hat and β_1-hat.
 
 # We can use partial derivatives to get the values for β_0 and β_1 in Galton's data.
 
+
 #..Code..
-# compute RSS for any pair of beta0 and beta1 in Galton's data
+# compute RSS for any pair of β_0 (beta0) and β_1 (beta1) in our galton_heights data
 library(HistData)
 data("GaltonFamilies")
 set.seed(1983)
@@ -27,6 +34,7 @@ rss <- function(beta0, beta1){
   return(sum(resid^2))
 }
 
+
 # plot RSS as a function of beta1 when beta0=25
 beta1 = seq(0, 1, len=nrow(galton_heights))
 results <- data.frame(beta1 = beta1,
@@ -34,19 +42,25 @@ results <- data.frame(beta1 = beta1,
 results %>% ggplot(aes(beta1, rss)) + geom_line() + 
   geom_line(aes(beta1, rss))
 
+# NOTE: this minimum is for beta1 when beta0 is fixed at 25. We don't know if that's the minimum for beta0. We don't
+# know if expression: (25, 0.65) minimizes the equation across all pairs. So we can use calculus to take the partial
+# derivatives, set them equal to 0, and solve for beta1 and beta0. If we have many paramenters, these equations can
+# get rather complex. Fortunately, there are functions in R that do these calculations for us.
+
 # The lm Function ---------------------------------------------------------
 
-# When calling the lm() function, the variable that we want to predict is put to the left of the ~ symbol, and the
-# variables that we use to predict is put to the right of the ~ symbol. The intercept is added automatically.
-
-# LSEs are random variables.
+# In r, we can obtain the LSE using the lm() function. To fit the following model where Y_i is the son's height and
+# X_i is the father's height (Y_i = β_0 + β_1*X_i + ∈_i), we would write the following piece of code.
 
 #..Code..
 # fit regression line to predict son's height from father's height
 fit <- lm(son ~ father, data = galton_heights)
 fit
 
-# summary statistics
+# When calling the lm() function, the variable that we want to predict is put to the left of the ~ symbol, and the
+# variables that we use to predict are put to the right of the ~ symbol. The intercept is added automatically.
+
+# we can use the function summary() to extract more information
 summary(fit)
 
 # LSE are Random Variables ------------------------------------------------
