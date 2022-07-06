@@ -82,9 +82,9 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 -- models-2.R
 - Section 2.2 - Least Squares Estimates
 
-    - Least Squares Estimates (LSE)
+    - Least Squares Estimates (LSE) - short summary on LSE and RSS
 
-    - The lm Function
+    - The lm Function - how to obtain the LSE in r using the lm() funciton.
     
     - LSE are Random Variables
     
@@ -100,3 +100,6 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 
 -- stratified_BB_for_RvHR.png
 - Scatter plots for runs versus home runs, stratified by bases on balls
+
+-- RSS_of_beta1_when_beta0=25.png
+- Sample plot of RSS as a function of beta1 when beta0 = 25
