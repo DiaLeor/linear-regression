@@ -12,6 +12,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 
 -- intro-1.R
 - Section 1.1 - Baseball as a Motivating Example
+https://github.com/DiaLeor/linear-regression/blob/main/intro_to_regression/intro-1.R
 
     - Motivating Example: Moneyball - a brief history of statistics in baseball
     
@@ -21,6 +22,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     
 -- intro-2.R
 - Section 1.2 - Correlation
+https://github.com/DiaLeor/linear-regression/blob/main/intro_to_regression/intro-2.R
 
     - Correlation - Galton's data on the heights of fathers and sons in his family
     
@@ -30,6 +32,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     
 -- intro-3.R
 - Section 1.3 - Stratification and Variance Explained
+https://github.com/DiaLeor/linear-regression/blob/main/intro_to_regression/intro-3.R
     
     - Anscombe's Quartet/Stratification - introducing the regression line
     
@@ -40,7 +43,8 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     - There are Two Regression Lines - regression lines differ depending on expectations computed for a given y or given x
     
 --- Directory: intro_to_regression/plots ---
-- listed in order of appearance
+https://github.com/DiaLeor/linear-regression/tree/main/intro_to_regression/plots
+(listed in order of appearance)
     
 -- HRs_wins.png
 - scatter plot of the relationship between home runs and wins
@@ -72,6 +76,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 
 -- models-1.R
 - Section 2.1 - Introduction to Linear Models
+https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-1.R
 
     - Confounding: Are BBs More Predictive? - bases on balls are confounded with home runs
     
@@ -81,6 +86,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     
 -- models-2.R
 - Section 2.2 - Least Squares Estimates
+https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-2.R
 
     - Least Squares Estimates (LSE) - short summary on LSE and RSS
 
@@ -93,7 +99,8 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
     - Predicted Variables are Random Varialbes
     
 --- Directory: linear_models/plots ---
-- listed in order of appearance
+https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
+(listed in order of appearance)
 
 -- stratified_HR_for_RvBB.png
 - Scatter plots for runs versus bases on balls, stratified by home runs
