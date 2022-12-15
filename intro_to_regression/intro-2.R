@@ -2,13 +2,16 @@
 
 # Correlation -------------------------------------------------------------
 
-# Galton tried to predict sons' heights based on fathers' heights.
+# Francis Galton studied the variation and heredity of human traits. While doing this, he developed the concepts
+# of correlation and regression and made a connection to pairs of variables that follow a normal distribution. 
+# Galton tried to predict sons' heights based on fathers' heights (similar to trying to predict run from bases on balls).
+# We have access to his family height data through the HistData package.
+# To have one pair of variables per family, we will select one son at random.
 
-# The mean and standard errors are insufficient for describing an important characteristic of the data: the trend
-# that the taller the father, the taller the son.
-
-# The correlation coefficient is an informative summary of how two variables move together that can be used to
-# predict one variable using the other.
+# Since both distributions are well-approximated by the normal distribution, we could use two averages and two standard
+# deviations as summaries. However the mean and standard errors are insufficient for describing an important characteristic
+# of the data: the trend that the taller the father, the taller the son. The correlation coefficient is an informative summary
+# of this trend—of how two variables move together and can be used to predict one variable using the other.
 
 # ..Code..
 # create the dataset
