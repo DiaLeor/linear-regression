@@ -67,7 +67,8 @@ galton_heights %>% summarize(r = cor(father, son)) %>% pull(r)
 
 # Sample Correlation is a Random Variable ---------------------------------
 
-# The correlation that we compute and use as a summary is a random variable.
+# As with the average and standard deviation the sample correlation is the most popularly used estimate of the
+# population correlation. This implies that the correlation that we compute and use as a summary is a random variable.
 
 # When interpreting correlations, it is important to remember that correlations derived from samples are estimates
 # containing uncertainty. It's a random variable, and it can have a pretty large standard error.
