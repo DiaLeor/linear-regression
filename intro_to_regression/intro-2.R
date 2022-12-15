@@ -39,7 +39,7 @@ galton_heights %>%
 # Correlation Coefficient -------------------------------------------------
 
 # The correlation coefficient is defined for a list of pairs (x_1, y1), ... , (x_n, y_n) as the product of the
-# standardized values: ((x_i - mu_x)/sigma_x)*((y_i - mu_i)/sigma_y) -- with mu being the symbol representing the
+# standardized values: ((x_i - mu_x)/sigma_x)*((y_i - mu_i)/sigma_y) — with mu being the symbol representing the
 # mean and sigma representing SD.
 
 # The Greek letter rho is commonly used in the statistics book to denote this correlation, as rho is the Greek
@@ -48,8 +48,8 @@ rho <- mean(scale(x)*scale(y))
 
 # The correlation coefficient essentially conveys how two variables move together.
 
-# x_i is ((x_i - mu_x)/sigma_x) SDs away from the average.
-# y_i is ((y_i - mu_i)/sigma_y) SDs away from the average.
+# x_i is ((x_i - mu_x)/sigma_x) SDs away from the average x.
+# y_i is ((y_i - mu_y)/sigma_y) SDs away from the average y.
 # If x and y are unrelated, then the product of these two quantities will be positive (either both positive or both
 # negative) as often as they will be negative (when one is positive and the other is negative and vice versa).
 # The correlation is this average, which will be about 0. Therefore, unrelated variables will have a correlation of
@@ -62,7 +62,7 @@ rho <- mean(scale(x)*scale(y))
 # The correlation coefficient is always between -1 and 1.
 
 # ..Code..
-# the correlation between father and sons' height
+# the correlation between father and sons' height is ~0.5 
 galton_heights %>% summarize(r = cor(father, son)) %>% pull(r)
 
 # Sample Correlation is a Random Variable ---------------------------------
