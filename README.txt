@@ -94,11 +94,11 @@ https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-2.R
 
     - The lm Function - how to obtain the LSE in r using the lm() funciton.
     
-    - LSE are Random Variables
+    - LSE are Random Variables - LSE are derived from samples
     
-    - Advanced Note on LSE
+    - Advanced Note on LSE - LSE can be strongly correlated
     
-    - Predicted Variables are Random Varialbes
+    - Predicted Variables are Random Varialbes - 
     
 --- Directory: linear_models/plots ---
 https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
@@ -112,3 +112,6 @@ https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
 
 -- RSS_of_beta1_when_beta0=25.png
 - Sample plot of RSS as a function of beta1 when beta0 = 25
+
+-- variability_of_estimated_betas.png
+- Histograms of estimates of beta_0 and beta_1 regression slope coefficients
