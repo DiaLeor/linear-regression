@@ -17,7 +17,7 @@
 # We will see how regression analysis can help develop strategies to build a competitive baseball team with a constrained budget. The
 # approach can be divided into two separate data analyses:
 
-# 1. determine which recorded player-specific statistics predict runs and
+# 1. determine which recorded player-specific statistics predict runs
 
 # 2. examine if players were undervalued based on what our first analysis predicts.
 
