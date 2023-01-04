@@ -11,7 +11,7 @@
 
 # This quantity is called the Residual sum of squares (RSS), which measures the distance between the true value
 # and the predicted value given by the regression line. The values that minimize the RSS are called the least
-# squares estimates (LSE) and dentoe them (in this case) with β_0-hat and β_1-hat.
+# squares estimates (LSE) and denote them (in this case) with β_0-hat and β_1-hat.
 
 # We can use partial derivatives to get the values for β_0 and β_1 in Galton's data.
 
@@ -28,6 +28,9 @@ galton_heights <- GaltonFamilies %>%
   ungroup() %>%
   select(father, childHeight) %>%
   rename(son = childHeight)
+
+str(galton_heights)
+head(galton_heights)
 
 rss <- function(beta0, beta1){
   resid <- galton_heights$son - (beta0+beta1*galton_heights$father)
@@ -95,6 +98,24 @@ sample_n(galton_heights, N, replace = TRUE) %>%
   .$coef
 
 lse %>% summarize(se_0 = sd(beta_0), se_1 = sd(beta_1))
+
+# The summary funciton also reports t-statistics and the p-value
+sample_n(galton_heights, N, replace = TRUE) %>% 
+  lm(son ~ father, data = .) %>% 
+  summary
+
+# There is also a Pr(greater than the absolute value of t) column
+# The t-statistic is not actually based on the CLT, but rather on the assumption that the epsilons follow a 
+# normal distribution. Under this assumption, mathematical theory tells us that the LSE/standard error follow a
+# t-distribution with N - p degrees of freedom with p, the number of parameters in our model (in this case p = 2).
+# The 2p values are testing the null hypothesis that beta_0 = 0 and that beta_1 = 0 respectively. However, for a
+# large enough N, the CLT works as the t-distrubution becomes almost the same as the normal distribution.
+
+# So if you assume either that the errors are normal and use the t-distribution or if you assume that N is large
+# enough to use the CLT, you can construct confidence intervals for your parameters. Note: hypothesis testing for
+# regression models is very commonly used in fields such as epidemiology and economics to make statements such as:
+  # the effect of A and B was statistically significant after adjusting for X, Y, and Z.
+# Important to note that several assumptions have to holf for the statements to hold.
 
 # Advanced Note on LSE ----------------------------------------------------
 
