@@ -3,6 +3,9 @@
 # Anscombe's Quartet/Stratification ---------------------------------------
 
 # Correlation is not always a good summary of the relationship between two variables.
+# A famous example used to illustrate this are four artificial data sets referred to as Anscombe's quartet.
+# All these pairs have correlation of 0.82. But it is clear that the relationship between x and y in those
+# four data sets are telling completely different stories.
 
 # The general idea of conditional expectation (conditional average) is that we stratify a population into groups
 # and compute summaries in each group (e.g. average son height conditioned on the father being 72 in. tall).
