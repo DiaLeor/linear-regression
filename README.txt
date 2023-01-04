@@ -34,7 +34,9 @@ https://github.com/DiaLeor/linear-regression/blob/main/intro_to_regression/intro
 - Section 1.3 - Stratification and Variance Explained
 https://github.com/DiaLeor/linear-regression/blob/main/intro_to_regression/intro-3.R
     
-    - Anscombe's Quartet/Stratification - introducing the regression line
+    - Anscombe's Quartet - correlation is not always a good summary
+    
+    - Stratification - introducing the regression line
     
     - Bivariate Normal Distribution - understanding the bivariate normal distribution
     
