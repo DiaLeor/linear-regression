@@ -11,7 +11,7 @@
 
 # This quantity is called the Residual sum of squares (RSS), which measures the distance between the true value
 # and the predicted value given by the regression line. The values that minimize the RSS are called the least
-# squares estimates (LSE) and denote them (in this case) with β_0-hat and β_1-hat.
+# squares estimates (LSE) and denote them ( in this case) with β_0-hat and β_1-hat.
 
 # We can use partial derivatives to get the values for β_0 and β_1 in Galton's data.
 
