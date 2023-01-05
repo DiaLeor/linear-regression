@@ -115,7 +115,7 @@ sample_n(galton_heights, N, replace = TRUE) %>%
 # enough to use the CLT, you can construct confidence intervals for your parameters. Note: hypothesis testing for
 # regression models is very commonly used in fields such as epidemiology and economics to make statements such as:
   # the effect of A and B was statistically significant after adjusting for X, Y, and Z.
-# Important to note that several assumptions have to holf for the statements to hold.
+# Important to note that several assumptions have to hold for the statements to hold.
 
 # Advanced Note on LSE ----------------------------------------------------
 
