@@ -98,7 +98,7 @@ https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-2.R
     
     - Advanced Note on LSE - LSE can be strongly correlated
     
-    - Predicted Variables are Random Varialbes - 
+    - Predicted Variables are Random Varialbes - denoting predicted values
     
 --- Directory: linear_models/plots ---
 https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
@@ -115,3 +115,9 @@ https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
 
 -- variability_of_estimated_betas.png
 - Histograms of estimates of beta_0 and beta_1 regression slope coefficients
+
+-- predictions_and_confidence_intervals.png
+- Scatter plot of predicted son heights (Y-hat) and confidence intervals
+
+-- best_fit_line.png
+- Plot of the line of best fit for predicted son heights (Y-hat)
