@@ -15,7 +15,6 @@
 
 # We can use partial derivatives to get the values for β_0 and β_1 in Galton's data.
 
-
 #..Code..
 # compute RSS for any pair of β_0 (beta0) and β_1 (beta1) in our galton_heights data
 library(HistData)
