@@ -1,4 +1,4 @@
-## Section 2.3 - Linear Models: Regression and Baseball
+## Section 2.4 - Linear Models: Regression and Baseball
 
 # Building a Better Offensive Metric for Baseball -------------------------
 
