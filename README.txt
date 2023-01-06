@@ -104,7 +104,7 @@ https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-2.R
 - Section 2.3 - Advanced dplyr: Summarize with Functions and Broom
 https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-3.R
 
-    - Advanced dplyr: Summarize with Functions and Broom - introducing tibbles
+    - Advanced dplyr: Summarize with Functions and Broom - introducing the broom package
 
 -- models-4.R
 - Section 2.4 - Regression and Baseball
