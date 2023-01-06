@@ -139,3 +139,6 @@ https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
 
 -- best_fit_line.png
 - Plot of the line of best fit for predicted son heights (Y-hat)
+
+-- visualization_of_slope_stability.png
+- A visual confirmation that the assumption that our slopes don't change is a safe one
