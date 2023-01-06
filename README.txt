@@ -100,6 +100,24 @@ https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-2.R
     
     - Predicted Variables are Random Varialbes - denoting predicted values
     
+-- models-3.R
+- Section 2.3 - Advanced dplyr: Summarize with Functions and Broom
+https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-3.R
+
+    - Advanced dplyr: Summarize with Functions and Broom - introducing tibbles
+
+-- models-4.R
+- Section 2.4 - Regression and Baseball
+https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-4.R
+
+    - Building a Better Offensive Metric for Baseball -
+    
+    - On Base Plus Slugging (OPS) -
+    
+    - Regression Fallacy -
+    
+    - Measurement Error Models -
+    
 --- Directory: linear_models/plots ---
 https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
 (listed in order of appearance)
