@@ -2,13 +2,31 @@
 
 # Advanced dplyr: summarize with functions and broom ----------------------
 
-# Tibbles can be regarded as a modern version of data frames and are the default data structure in the tidyverse.
+# To provide a more rigorous defense of the slopes being the same, we could compute confidence
+# intervals for each slope. Though we haven't learned the formula for this, the lm() function provides
+# enough information to construct them.
 
-# Some functions that do not work properly with data frames do work with tibbles.
+# Note: if we try to use the lm() function to get the estimated slopes for each strata, we don't get
+# what we want. The lm() function ignores group_by() because lm() is not part of the tidyverse and
+# doesn't know how to handle to outcome of a group_by() - a grouped tibble.
+# Tibbles can be regarded as a modern version of data frames and are the default data structure in
+# the tidyverse. Some functions that do not work properly with data frames do work with tibbles.
 
 # Including a function inside a summarize can help that function handle a grouped tibble.
 
-# The broom package has three main functions, tidy, glance, and augment, that are useful for connecting lm to the tidyverse.
+# The broom package has three main functions, tidy, glance, and augment, that are useful for
+# connecting lm() to the tidyverse. It lets us do things like compute confidence intervals.
+    # tidy() - returns estimates and related information as a data frame
+    # learn more about the other functions by reading the broom documentation
+    
+# Because the outcome is a data frame, we can immediately use it with the summarize function and
+# string together the commands that produce the table that we're after.
+# Because a data frame is returned and we can filter and select the rows and columns we want, we can
+# make it prettier by simply adding a could of lines of code. A table like this can then be easily
+# visualized with ggplot().
+
+# The plot we just made using summarize and broom shows that the confidence intervals overlap, which
+# provides a nice visual confirmation that our assumption that our slopes don't change is a safe one.
 
 #..Code..
 # stratify by HR
