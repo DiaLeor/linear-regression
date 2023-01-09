@@ -110,7 +110,7 @@ https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-3.R
 - Section 2.4 - Regression and Baseball
 https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-4.R
 
-    - Building a Better Offensive Metric for Baseball -
+    - Building a Better Offensive Metric for Baseball - player metrics based on a multivariate model
     
     - On Base Plus Slugging (OPS) -
     
@@ -141,4 +141,16 @@ https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
 - Plot of the line of best fit for predicted son heights (Y-hat)
 
 -- visualization_of_slope_stability.png
-- A visual confirming the assumption that our slopes don't change
+- Visual confirming the assumption that our slopes don't change
+
+-- runs_prediction_2002.png
+- Plot that predicts the runs in 2002 using data from previous years
+
+-- player_specific_runs_prediction_2002.png
+- Histogram that predicts the player-specific runs in 2002
+
+-- player_metrics_salaries.png
+- Plot showing the metrics and salaries of all players
+
+-- player_metrics_salaries_debut_pre1998.png
+- Plot showing the metrics and salaries of players, exluding those that debuted after 1998
