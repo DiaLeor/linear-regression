@@ -2,6 +2,91 @@
 
 # Building a Better Offensive Metric for Baseball -------------------------
 
+# In our model that helps us explore how well bases on balls predict runs, the data is approximately
+# normal. And conditional distributions were also normal. So it's justified to propose the linear
+# model: Y_i = β_0 + β_1*X_i,1 + β_2*X_i,2 + ∈_i with runs per game (Y_i), walks per game (X_i,1)m, and home
+# runs per game X_i,2.
+
+# To use lm() here, we need to let it know that we have two predictor variables. We use the plus
+# symbol like this:
+lm(R ~ BB + HR, data = .)
+# to build a multiple regression model and use the tidy() funciton to see a summary. When we fit the
+# model with only one variable without the adjustment, the estimated slopes were 0.735 and 1.844 for
+# bases on balls and home runs, respectively. But when we fit the multivariate model, both these slopes
+# go down, with the bases on balls effect decreasing much more.
+
+# Now if we want to construct a metric to pick players, we need to consider singles, doubles (X2B),
+# and triples (X3B) as well. We will assume that these five variables are jointly normal. This means
+# that if we pick any one of them and hold the other four fixed, the relationship with the outcome
+# (in this case runs per game) is linear and the slopes for this relationship do not depend on the
+# other four values that were held constant. If this is true, then a linear model for our data
+# would look like this: Y_i = β_0 + β_1*X_i1 + β_2*X_i2 + β_3*X_i3 + β_4*X_i4 + β_5*X_i5 +∈_i with
+# the X's representing bases on balls/game, singles/game, doubles/game, triples/game, and home
+# runs/game, respectively.
+
+# Using lm(), we can quickly find the least squared errors for the parameters using code. And we can
+# use the tidy function to see the coefficients, standard errors, and confidence intervals. To see
+# how well our metric actually predicts runs, we can predict the number of runs for each team in 2002
+# using the function predict() to make the plot. NOTE: remember that we didn't use the 2002 year to
+# create this metric. We can conclude our model does a decent job, as demonstrated by the fact that
+# points from the observed versus predicted plot fall close to the identity line.
+
+# So instead of using batting average or just the number of home runs as a measure for picking
+# players, we can use our fitted model to form a more informative metric that relates more directly
+# to run production.
+
+# To define a metric for player A, we can imagine a team of players just like player A and use our
+# fitted regression model to predict how many runs this team would produce. This formula would be:
+singles <- H-HR-X2B-X3B
+-2.769 + 0.371*BB + 0.519*singles + 0.771*X2B + 1.240*X3B + 1.443*HR
+# Basically, we plug in the estimated coefficients into the regression formula.
+
+# However, a challenge here is that we have derived the metrics for teams based on team-level summary
+# statistics (ex: the HR value is HR/G for the entire team). If you compute HR/G for a player, it
+# will be much lower (as the total is accumulated by nine batters).Furthermore, if a player only
+# plays part of the game and gets less opportunity than average, it's still considered a game played.
+# And that would also make their rates lower than they should be. For players, a rate that instead
+# takes into account opportunities is a per-plate-appearance rate. To make the per-game team rate
+# comparable to the per-plate-appearance player rate, we compute the average number of team plate
+# appearances per game using code. And now we are ready to use this metric.
+
+# We will compute the per-plate-appearance rates for players available in 2002 (again using data from
+# previous years). To avoid sample artifacts, we're going to filter players with few plate
+# appearances. We can create a calculation of what we want to do in one long line of code using
+# tidyverse.
+
+# So we fit our model. We have player-specific metrics. The player-specific predicted runs computed
+# here can be interpreted as the number of runs we would predict a team to score if this team was
+# made up of just that player - if that player batted every single time. The distribution shows
+# that there is wide variability across players.
+
+# To actually build the teams, we will need to know the players' salaries, since we have a limited
+# budget. NOTE: Remember we are pretending to be the Oakland A's in 2002 with a mere $40 million
+# budget. We also need to know the player's position, as we're going to need one shortstop, one
+# second baseman, on third baseman, etc. For this, we can do some data wrangling to combine info
+# that is contained in different tables from the Lahman library.
+
+# We start by adding the 2002 salaries for each player using code. It's a bit complicated to select
+# for position, as players play more than one position each year. In this case, we're going to pick
+# the one position most played by each player using the top_n() function. And to make sure that we
+# only pick one position in case of ties, we're going to take the first row. We remove the
+# OF (outfielder) position, which is a generalization of three positions. We also code to remove
+# pitchers, as they don't bat in the league. Finally, we add their first and last names so we know
+# who we're talking about.
+
+# Now we have a table with our predicted run statistic, some other statistics, player name, position,
+# and salary. Note the very high salaries of the players in the top 10. The majority of players with
+# high metrics have high salaries. By making a plot, however, we do see that some low-cost players
+# have high metrics. These would be great for our low budget team. Unfortunately, these are likely
+# young players that have not yet been able to negotiate a salary and are not going to be available
+# in 2002 (for example, the lowest earner on our top 10 list is Albert Pujols (who was a rookie in
+# 2001).
+
+# If we make a plot of players that debuted before 1997, we can remove all the young players. We can
+# now search for good deals by looking at players that produce many more runs and others with similar
+# salaries. We can use this table to decide what players to pick and keep our total salary below the
+# $40 million budget.
+?Teams
 #..Code..
 # linear regression with two variables
 fit <- Teams %>% 
