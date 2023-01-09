@@ -234,8 +234,14 @@ players %>% mutate(BB = my_scale(BB),
 
 # On Base Plus Slugging (OPS) ---------------------------------------------
 
-# The on-base-percentage plus slugging percentage (OPS) metric is:
-# BA/PA + (Singles + 2Doubles + 3Triples + 4HR)/AB
+# Since the 1980s, sabermetricians have used a summary statistic different from batting average to
+# evaluate players. They realized walks were important and that doubles and triples and homeruns
+# should be weighted much more than singles, then proposed the following on-base-percentage plus
+# slugging percentage (OPS) metric:
+singles <- H-HR-X2B-X3B
+BA/PA + (singles + 2*X2B + 3*X3B + 4*HR)/AB
+# Although sabermetricians are probably not using regression, this metric is impressively close to
+# what one gets with regression to the summary statistic that we created (they're very correlated).
 
 # Regression Fallacy ------------------------------------------------------
 
