@@ -249,7 +249,50 @@ BA/PA + (singles + 2*X2B + 3*X3B + 4*HR)/AB
 # observations.
 
 # The example showed in the video demonstrates that the "sophomore slump" observed in the
-# data is caused by regressing to the mean.
+# data is caused by regressing to the mean. According to wikipedia, a sophomore slump/jinx/jitters
+# refers to an instance in which a second, or sophomore, effort fails to live up to the standard of
+# the first effort. It's commonly used to refer to the apathy of students (in their second year of
+# high school/college/university), the performance of athletes (second season of play), singers/bands
+# (second album), television shows (second season), and movies (sequels/prequels).
+
+# In Major League Baseball, the Rookie of the Year (an award given to the first year player that is
+# judged to have performed the best) usually doesn't perform as well during their second year.
+
+# Can we use data to confirm the existence of the sophomore slump? Take a look and examine the data
+# for batting averages to see if the observation holds true. The data is available in the Lahman
+# library, but we have to do some work to create a table with the statistics for all the rookies of
+# the year.
+
+# First, we create a table with player ID, their names and their most played position. Now we will
+# create a table with only the Rookie of the Year Award winners and add their batting statistics.
+# We filter out pitchers, since pitchers are not given awards for batting, and focus on offense.
+# Specifically, we focus on batting average, since it is the summary that most pundits talk about
+# when discussing the sophomore slump. Now we keep only the rookie and sophomore seasons and remove
+# players that did not play a sophomore season. Finally, we use the spread function to have one
+# column for the rookie and another column for the sophomore years' batting averages.
+
+# Now we can see the top performers in their first year aka Rookie of the Year Award winners and
+# display their rookie season batting average and sophomore season batting average. Look closely and
+# you see the sophomore slump. It definitely appears to be real. In fact, the proportion of players
+# that have a lower batting average in their sophomore years is 68%. Why is this?
+
+# To answer this question, we can turn our attention to all players, looking at the 2013 and 2014
+# seasons. And we select players that batted at least 130 times (this is a minimum needed to win
+# the Rookie of the Year award). We perform a similar operation as we did before to construct the
+# data set. When we look at the top performers of 2013 and then look at their performance in 2014,
+# the same pattern arises. Batting averages go down for the top performers. But these are not
+# rookies. So this can't be explained with the sophomore slump. Also, we look at the worst performers
+# of 2013. Their batting averages go up in their second season in 2014. Is this a reverse slump?
+
+# In fact, there is no such thing as a sophomore slump. This can all be explained with a simple
+# statistical fact: the correlation of performance in two separate years is high but not perfect.
+# Looking at a plot, we see 2013 and 2014 performance is correlated. But not perfectly. The
+# correlation is 0.46. The data look very much like a bivariate normal distribution, which means
+# that if we were to predict the 2014 batting average (y) for any given player that had a 2013
+# batting average of x, we would use the regression equation. Regression tells us that on average,
+# we expect high performers from 2013 to do a little bit worse in 2014. This is regression to the
+# mean. The rookies of the year are selected from the top values of x. So it is expected that their y
+# will regress to the mean.
 
 #..Code..
 # The code to create a table with player ID, their names, and their most played position:
