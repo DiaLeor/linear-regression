@@ -112,7 +112,7 @@ https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-4.R
 
     - Building a Better Offensive Metric for Baseball - player metrics based on a multivariate model
     
-    - On Base Plus Slugging (OPS) -
+    - On Base Plus Slugging (OPS) - the metric sabermetricians actually use
     
     - Regression Fallacy -
     
