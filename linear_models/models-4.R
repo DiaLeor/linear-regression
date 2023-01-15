@@ -361,16 +361,62 @@ summarize(two_years, cor(`2013`,`2014`))
 # Measurement Error Models ------------------------------------------------
 
 # Up to now, all our linear regression examples have been applied to two or more random variables.
-# We assume the pairs are bivariate normal and use this to motivate a linear model.
+# We assume the pairs are bivariate normal and use this to motivate a linear model. This approach
+# covers most real life examples where linear regression is used.
 
 # Another use for linear regression is with measurement error models, where it is common to have a
 # non-random covariate (such as time). Randomness is introduced from measurement error rather than
 # sampling or natural variability.
 
+# We will use physics as a motivating example. Imagine you are Galileo in the 16th century trying to
+# describe the velocity of a falling object. An assistant climbs the Tower of Pisa and drops a ball.
+# Several other assistants record the position at different times. The falling_object data set
+# contains an example of what this data would look like.
+
+# We use ggplot to make a plot. Here we see the distance in meters that has dropped on the y-axis
+# and the time on the x-axis. You don't know the exact equation, but from data exploration, by
+# looking at the plot, he deduces that the position should follow a parabola:
+# f(x) = β_0 + β_1*X + β_2*X^2
+# The data doesn't fall exactly on a parabola. But you know that this is due to measurement
+# error i.e., his helpers make mistakes when measuring the distance the ball has fallen. To account
+# for this, we write this model:
+# Y_i = β_0 + β_1*X_i + β_2*X_i^2 + ∈_i, i = 1,...,n
+# where Y_i is the distance the ball is dropped in meters, x_i represents time in seconds, and ∈
+# represents measurement error. Measurement error is assumed to be random, independent from each
+# other and having the same distribution from each i. We also assume that there's no bias, which
+# means that the expected value of ∈ is 0.
+
+# Note that this is a linear model! It is a linear combination of known quantities. x and x^2 are
+# known. The unknown parameters are the β's. Unlike our previous example, the x's are fixed
+# quantities of time. We're not conditioning.
+
+# Now you need actual numbers instead of unknown parameters. The least squares estimates seem like a
+# reasonable approach. So how do we find the LSE? Note that the LSE calculations do not require the
+# errors to be approximately normal. The lm() function will find the β's that minimize the residual
+# sum of squares, which is what we want. So we use code to obtain our estimated parameters. To check
+# if the estimated parabola fits the data, the broom function augment() lets us do this easily with
+# code to make a new plot. Note that the predicted values go right through the points.
+
+# In physics, the equation for the trajectory of a falling object is
+# d = h_0 + v_0*t - 0.5 * 9.8*t^2
+# with h_0 and v_0 as the starting height and starting velocity, respectively. The data we use follow
+# this equation and added simulated measurement error and observations. We drop the ball, that
+# means starting velocity is 0, from the Tower of Pisa, which has a height of 56.67 meters. These known
+# quantities are consistent with the parameters that we estimates, which we can see using the tidy()
+# function.
+
+# The Tower of Pisa height is in the confidence interval for β_0. The initial velocity of 0 is in the
+# confidence interval for β_1. Note that the p value is larger than 0.05, which means we wouldn't
+# reject the hypothesis that the starting velocity is 0. And finally, the acceleration constant is in
+# the confidence intervals for negative 2*β_2.
+
 #..Code..
 # The code to use dslabs function rfalling_object to generate simulations of dropping balls:
 library(dslabs)
+library(tidyverse)
+library(broom)
 falling_object <- rfalling_object()
+
 
 # The code to draw the trajectory of the ball:
 falling_object %>%
