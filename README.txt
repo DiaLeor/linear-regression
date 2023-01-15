@@ -154,3 +154,9 @@ https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
 
 -- player_metrics_salaries_debut_pre1998.png
 - Plot showing the metrics and salaries of players, exluding those that debuted after 1998
+
+-- falling_object_trajectory.png
+- Plot of the trajectory of the falling object
+
+-- fit_line_falling_object_trajectory.png
+- Plot of the estimated parabola against the trajectory of the falling object
