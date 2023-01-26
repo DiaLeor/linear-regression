@@ -1,4 +1,4 @@
-<p>Taking notes on the <a href="https://www.edx.org/course/data-science-linear-regression" target="_blank">Data Science: Linear Regression</a> course; practicing what I've learned during the previous <a href="https://www.edx.org/course/data-science-productivity-tools" target="blank">Data Science: Productivity Tools</a> course.<br>
+<p>Taking notes on the <a href="https://www.edx.org/course/data-science-linear-regression">Data Science: Linear Regression</a> course; practicing what I've learned during the previous <a href="https://www.edx.org/course/data-science-productivity-tools">Data Science: Productivity Tools</a> course.<br>
 <br>
 For most effective navigation in RStudio, document outine (Ctrl+Shift+O) aligns with the following .R contents:<br></p>
 <br>
