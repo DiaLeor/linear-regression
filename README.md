@@ -64,7 +64,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 <center>.<br>
 ..<br>
 .<br></center>
---- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/intro_to_regression/plots/linear_models.png">linear_models</a> ---<br>
+<p>--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/intro_to_regression/plots/linear_models.png">linear_models</a> ---<br>
 <br>
 -- <a href="https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-1.R">models-1.R</a><br>
 - Section 2.1 - Introduction to Linear Models<br>
@@ -103,8 +103,8 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 &emsp;&emsp;- Regression Fallacy - add plots below<br>
 &emsp;&emsp;<br>
 &emsp;&emsp;- Measurement Error Models - add plots below<br>
-&emsp;&emsp;<br>
---- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots">linear_models/plots</a> ---<br>
+&emsp;&emsp;<br></p>
+<p>--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots">linear_models/plots</a> ---<br>
 (listed in order of appearance)<br>
 <br>
 -- <a href="https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots/stratified_HR_for_RvBB.png">stratified_HR_for_RvBB.png</a><br>
@@ -147,8 +147,8 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 - Plot of the estimated parabola against the trajectory of the falling object<br>
 <center>.<br>
 ..<br>
-.<br></center>
---- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/confounding">confounding</a> ---<br>
+.<br></center></p>
+<p>--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/confounding">confounding</a> ---<br>
 <br>
 -- <a href="https://github.com/DiaLeor/linear-regression/blob/main/confounding/confounding-1.R">confounding-1.R</a><br>
 - Section 3.1 - Correlation is Not Causation<br>
@@ -162,9 +162,9 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 &emsp;&emsp;- Confounders -<br>
 &emsp;&emsp;<br>
 &emsp;&emsp;- Simpson's Paradox -<br>
-<br>
---- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/confounding/plots">confounding/plots</a> ---<br>
+<br></p>
+<p>--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/confounding/plots">confounding/plots</a> ---<br>
 (listed in order of appearance)<br>
 <br>
---<a href=""><br>
+--<a href=""><br></p>
 -
