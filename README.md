@@ -64,7 +64,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 <center>.<br>
 ..<br>
 .<br></center>
---- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/intro_to_regression/plots/linear_models.png">linear_models ---<br>
+--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/intro_to_regression/plots/linear_models.png">linear_models</a> ---<br>
 <br>
 -- <a href="https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-1.R">models-1.R</a><br>
 - Section 2.1 - Introduction to Linear Models<br>
@@ -148,7 +148,7 @@ For most effective navigation--In RStudio, document outine (Ctrl+Shift+O) aligns
 <center>.<br>
 ..<br>
 .<br></center>
---- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/confounding">confounding ---<br>
+--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/confounding">confounding</a> ---<br>
 <br>
 -- <a href="https://github.com/DiaLeor/linear-regression/blob/main/confounding/confounding-1.R">confounding-1.R</a><br>
 - Section 3.1 - Correlation is Not Causation<br>
