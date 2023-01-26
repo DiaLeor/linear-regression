@@ -114,9 +114,9 @@ https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-4.R
     
     - On Base Plus Slugging (OPS) - the metric sabermetricians actually use
     
-    - Regression Fallacy -
+    - Regression Fallacy - add plots below
     
-    - Measurement Error Models -
+    - Measurement Error Models - add plots below
     
 --- Directory: linear_models/plots ---
 https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
@@ -160,3 +160,28 @@ https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots
 
 -- fit_line_falling_object_trajectory.png
 - Plot of the estimated parabola against the trajectory of the falling object
+.
+..
+.
+--- Directory: confounding ---
+
+-- confounding-1.R
+- Section 3.1 - Correlation is Not Causation
+https://github.com/DiaLeor/linear-regression/blob/main/confounding/confounding-1.R
+
+    - Spurious Correlation -
+    
+    - Outliers -
+    
+    - Reversing Cause and Effect -
+    
+    - Confounders -
+    
+    - Simpson's Paradox -
+
+--- Directory: confounding/plots ---
+https://github.com/DiaLeor/linear-regression/tree/main/confounding/plots
+(listed in order of appearance)
+
+--plotTBD.png
+-
