@@ -61,7 +61,7 @@ For most effective navigation in RStudio, document outine (Ctrl+Shift+O) aligns 
 <br>
 -- <a href="https://github.com/DiaLeor/linear-regression/tree/main/intro_to_regression/plots/stratified_heights.png">stratified_heights.png</a><br>
 - plots stratifying son height by standardized father heights<br></p>
-.<br>
+<p>.<br>
 ..<br>
 .<br></p>
 <p>--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/intro_to_regression/plots/linear_models.png">linear_models</a> ---<br>
@@ -144,8 +144,8 @@ For most effective navigation in RStudio, document outine (Ctrl+Shift+O) aligns 
 - Plot of the trajectory of the falling object<br>
 <br>
 -- <a href="https://github.com/DiaLeor/linear-regression/tree/main/linear_models/plots/fit_line_falling_object_trajectory.png">fit_line_falling_object_trajectory.png</a><br>
-- Plot of the estimated parabola against the trajectory of the falling object<br>
-.<br>
+- Plot of the estimated parabola against the trajectory of the falling object<br></p>
+<p>.<br>
 ..<br>
 .<br></p>
 <p>--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/confounding">confounding</a> ---<br>
