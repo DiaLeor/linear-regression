@@ -82,10 +82,10 @@
 <br>
 &emsp;&emsp;- Spurious Correlation - correlations among variables that are theoretically uncorrelated<br>
 &emsp;&emsp;<br>
-&emsp;&emsp;- Outliers -<br>
+&emsp;&emsp;- Outliers - one outlier can greatly skew the correlation<br>
 &emsp;&emsp;<br>
-&emsp;&emsp;- Reversing Cause and Effect -<br>
+&emsp;&emsp;- Reversing Cause and Effect - interpreting data one way instead of the other way around<br>
 &emsp;&emsp;<br>
-&emsp;&emsp;- Confounders -<br>
+&emsp;&emsp;- Confounders - perhaps the most common reason associations are misinterpreted<br>
 &emsp;&emsp;<br>
-&emsp;&emsp;- Simpson's Paradox -<br></p>
+&emsp;&emsp;- Simpson's Paradox - the correlation flips when computed on the population and computed on a specific strata<br></p>
