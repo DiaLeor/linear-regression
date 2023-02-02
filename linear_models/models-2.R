@@ -17,6 +17,7 @@
 
 #..Code..
 # compute RSS for any pair of β_0 (beta0) and β_1 (beta1) in our galton_heights data
+library(tidyverse)
 library(HistData)
 data("GaltonFamilies")
 set.seed(1983)
