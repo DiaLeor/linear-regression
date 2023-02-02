@@ -2,14 +2,43 @@
 
 # Spurious Correlation ---------------------------------------------------
 
-# Association/correlation is not causation.
+# Association/correlation is not causation. In this course, we have described tools useful for
+# quantifying associations between variables, but we must be careful not to over interpret these
+# associations. There are many reasons why a variable x can correlate with a variable y, without
+# either being a cause for the other. One common way that can lead to misinterpreting
+# associations: spurious correlations.
+ 
+# Example: there is existing data that shows a very strong correlation between divorce rates and
+# margarine consumption. Does this mean that margarine causes divorces or do divorces cause people
+# to eat more margarine? To see more examples of spurious correlations:
+# tylervigen.com/spurious-correlations. The site has examples of what is generally called data
+# dredging, data phishing, or data snooping. It's basically a form of cherry picking (US
+# terminology). One method of data dredging would be if you look through many results produced
+# by a random process, and pick the one that shows a relationship that supports the theory you
+# want to defend. A monte carlo simulation can be used to show how data dredging can result in
+# finding high correlations among variables that are theoretically uncorrelated. It's just a
+# mathematical fact that if we observe random correlations that are expected to be 0, but have a
+# standard error of about 0.2, the largest one with be close to 1 if we pick from among one
+# million. Note that if we performed regression on this group and interpreted the p-value, we
+# would incorrectly claim this was a statistically significant relation. This particular form of
+# data dredging is called p-hacking.
 
-# p-hacking is a topic of much discussion because it is a problem in scientific publications. Because
-# publishers tend to reward statistically significant results over negative results, there is an
-# incentive to report significant results.
+# p-hacking is a topic of much discussion because it is a problem in scientific publications.
+# Because publishers tend to reward statistically significant results over negative results, there
+# is an incentive to report significant results. In epidemiology for example, researchers may look
+# for associations between an average outcome and several exposures and only report the one
+# exposure that resulted in a small p-value. Furthermore, they might try fitting several different
+# models to adjust for confounding and pick the one model that yields the smallest p-value. In
+# experimental disciplines, an experiment might be repeated more than once, and only the one that
+# results in a small p-value are reported. This doesn't necessarily happen due to unethical
+# behavior, but rather to statistical ignorance or wishful thinking. In advanced statistics
+# courses, you'll learn methods to adjust for what is called the multiple comparison problem.
 
 #..Code..
 # generate the Monte Carlo simulation
+library(dslabs)
+library(tidyverse)
+
 N <- 25
 g <- 1000000
 sim_data <- tibble(group = rep(1:g, each = N), x = rnorm(N * g), y = rnorm(N * g))
