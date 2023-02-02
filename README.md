@@ -80,7 +80,7 @@
 -- <a href="https://github.com/DiaLeor/linear-regression/blob/main/confounding/confounding-1.R">confounding-1.R</a><br>
 - Section 3.1 - Correlation is Not Causation<br>
 <br>
-&emsp;&emsp;- Spurious Correlation -<br>
+&emsp;&emsp;- Spurious Correlation - correlations among variables that are theoretically uncorrelated<br>
 &emsp;&emsp;<br>
 &emsp;&emsp;- Outliers -<br>
 &emsp;&emsp;<br>
