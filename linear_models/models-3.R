@@ -30,6 +30,8 @@
 
 #..Code..
 # stratify by HR
+library(tidyverse)
+library(Lahman)
 dat <- Teams %>% filter(yearID %in% 1961:2001) %>%
   mutate(HR = round(HR/G, 1), 
          BB = BB/G,
