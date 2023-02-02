@@ -86,9 +86,13 @@ singles <- H-HR-X2B-X3B
 # now search for good deals by looking at players that produce many more runs and others with similar
 # salaries. We can use this table to decide what players to pick and keep our total salary below the
 # $40 million budget.
-?Teams
+
 #..Code..
 # linear regression with two variables
+library(tidyverse)
+library(Lahman)
+?Teams
+
 fit <- Teams %>% 
   filter(yearID %in% 1961:2001) %>% 
   mutate(BB = BB/G, HR = HR/G,  R = R/G) %>%  
