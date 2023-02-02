@@ -41,8 +41,6 @@ Teams %>%
 
 # ..Code From the Textbook..
 # find regression line for predicting runs from BBs
-library(tidyverse)
-library(Lahman)
 get_slope <- function(x, y) cor(x, y) * sd(y) / sd(x) # NOTE: this is the formula for calculating the slope of a
 # regression line
 
