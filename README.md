@@ -34,7 +34,7 @@
 &emsp;&emsp;- There are Two Regression Lines - regression lines differ depending on expectations computed for a given y or given x<br></p>
 <p><br>
 <br></p>
-<p>--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/intro_to_regression/plots/linear_models.png">linear_models</a> ---<br>
+<p>--- Directory: <a href="https://github.com/DiaLeor/linear-regression/tree/main/linear_models">linear_models</a> ---<br>
 <br>
 -- <a href="https://github.com/DiaLeor/linear-regression/blob/main/linear_models/models-1.R">models-1.R</a><br>
 - Section 2.1 - Introduction to Linear Models<br>
